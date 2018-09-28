@@ -1,0 +1,12 @@
+{
+    "TITLE": "Warehouse-Admin (EN)",
+    "LOGIN_TITLE": "Warehouse",
+    "LOGIN_MOTD": "Welcome to the Warehouse. Please use your e-mail and password to log in.",
+    "EMAIL": "E-mail address",
+    "PASSWORD": "Password",
+    "LOGIN_FAILED": "Login failed. Please check your username and password.",
+    "HTTPERRORRESPONSE": "Opps, something went wrong. Try again later.",
+    "UNKNOWN_ERROR": "Opps, something went wrong. Try again later.",
+    "ADD_NEW": "Add new",
+    "UNIT": "Unit"
+}

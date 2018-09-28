@@ -1,0 +1,12 @@
+{
+    "TITLE": "Warehouse-Admin",
+    "LOGIN_TITLE": "Warehouse",
+    "LOGIN_MOTD": "Üdv a Raktárban. Jelentkezz be az e-mail címed és a jelszavad segítségével.",
+    "EMAIL": "E-mail cím",
+    "PASSWORD": "Jelszó",
+    "LOGIN_FAILED": "Sikertelen bejelentkezés. Kérlek ellenőrizd az e-mail címed és a jelszavad.",
+    "HTTPERRORRESPONSE": "Hoppá, valami nem sikerült. Kérlek próbáld később.",
+    "UNKNOWN_ERROR": "Hoppá, valami nem sikerült. Kérlek próbáld később.",
+    "ADD_NEW": "Új hozzáadása ebből:",
+    "UNIT": "Egység"
+}

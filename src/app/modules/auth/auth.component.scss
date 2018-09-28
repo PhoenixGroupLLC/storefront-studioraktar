@@ -1,0 +1,68 @@
+@import 'src/mat-theme.scss';
+@import 'src/animations.scss';
+
+/*Change text in autofill textbox*/
+input:-webkit-autofill {
+    -webkit-text-fill-color: $app-white;
+    -webkit-box-shadow: 0 0 0 30px $app-black inset !important;
+}
+
+.main {
+    background: $app-black;;
+    font-family: 'Roboto';
+    /*
+    animation-name: fadeIn;
+    animation-duration: 300ms;
+    animation-iteration-count: 1;
+    */
+}
+
+.motd h1 {
+    color: mat-color($app-accent);
+    font-variant: small-caps;
+}
+.motd p {
+    color: mat-color($app-accent, A400);
+}
+
+.loginForm {
+    padding: 20px 70px 0px 70px;
+    background: $app-black;
+    color: mat-color($app-accent);
+}
+
+.loginForm button {
+    margin-top: 24pt;
+    padding: 7.5px;
+}
+
+mat-spinner {
+    margin-top: 32px;
+}
+
+.banner {
+    margin-bottom: 6em;   
+}
+.banner > img {
+    max-height: 56px;
+}
+
+.motd {
+    margin-bottom: 4em;
+}
+
+.infoPanel {
+    background-image: url('/assets/login-bg-4-2.jpg');
+    background-size: cover;
+    animation-name: zoomAndRotate;
+    animation-duration: 120s;
+    animation-iteration-count: 1;
+}
+
+.infoPanel > nav {
+    padding: 18px;
+    background: linear-gradient(to bottom, rgba(0,0,0,.75) 0%,rgba(0,0,0,0) 100%);
+}
+.infoPanel > footer {
+    background: linear-gradient(to top, rgba(0,0,0,.75) 0%,rgba(0,0,0,0) 100%);
+}

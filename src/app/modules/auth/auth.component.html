@@ -1,0 +1,37 @@
+<div class="main" fxLayout="row" fxFlexFill fxLayoutAlign="center" [@flyInOut]="'in'">
+  <form class="loginForm" (ngSubmit)="login()" fxFlex fxFlex.gt-md="30" fxLayout="column">
+    <div class="banner" fxLayoutAlign="start center">  
+      <img src="/assets/banner.svg" />
+    </div>  
+    <div class="motd">
+      <h1 translate>LOGIN_TITLE</h1>
+      <p translate>LOGIN_MOTD</p>
+    </div>
+    <mat-form-field class="">
+        <input matInput id="email" name="email" type="email" aria-describedby="emailHelp" placeholder="{{'EMAIL' | translate}}" [(ngModel)]="email">
+    </mat-form-field>
+    <mat-form-field class="">
+      <input matInput id="password" name="password" type="password" placeholder="{{'PASSWORD' | translate}}" [(ngModel)]="password">
+    </mat-form-field>
+    <button [style.display]="loading ? 'none' : 'block'" mat-raised-button color="primary" translate>
+        LOGIN
+    </button>
+    <div fxLayout="column" fxLayoutAlign="start center">
+      <mat-spinner [style.display]="loading ? 'block' : 'none'" diameter='36'></mat-spinner>
+    </div>
+  </form>
+  <div class="infoPanel" fxLayout="column" fxFlex fxHide fxShow.gt-md="true" >
+    <nav fxFlex="192px" fxLayout="row" fxLayoutAlign="end start" fxLayoutGap="20px">
+      <a mat-button
+        color="accent" 
+        *ngFor="let item of links; let i = index"
+        routerLink="{{item.routerLink}}"
+        href="{{item.href}}"
+        translate>
+        {{item.label}}
+      </a>
+    </nav>
+    <div fxFlex></div>
+    <footer fxFlex="192px" fxLayout="row" fxLayoutAlign="end start"></footer>
+  </div>
+</div>
